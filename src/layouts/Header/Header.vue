@@ -1,5 +1,13 @@
 <script setup>
+   import PrimaryBtn from '@/components/PrimaryBtn.vue';
+   import DownloadLink from '@/components/DownloadLink.vue';
+   import SocialLink from '@/components/SocialLink.vue';
 
+   const greeting = "hello";
+   const firstName = "MD SUJAN";
+   const lastName = "AHMED";
+   const profession = "Software Developer";
+   const fm = "Follow Me";
 </script>
 
 <template>
@@ -25,15 +33,15 @@
           <div class="hero-content">
 
             <!-- start info -->
-            <h3 class="title-welcome">hello</h3>
-            <h1 class="display-1">I'M MD SUJAN <br> AHMED</h1>
-            <h3>Professional Laravel Developer</h3>
+            <h3 class="title-welcome">{{ greeting }}</h3>
+            <h1 class="display-1">I'M {{ firstName }} <br> {{ lastName }} </h1>
+            <h3>Professional {{ profession }}</h3>
             <!-- end info -->
 
             <!-- start link -->
             <ul class="link d-flex">
-              <li><a class="btn btn-generic" href="#">hire me</a></li>
-              <li><a class="btn btn-link" href="#">download cv <i class="fa-solid fa-download"></i></a></li>
+              <PrimaryBtn label="hire me" link="#"/> 
+              <DownloadLink label="download cv" link="#"/>
             </ul>
             <!-- end link -->
 
@@ -68,20 +76,16 @@
 
     <!-- start social -->
     <ul class="social">
-      <li><a href="comment.html"><i class="fa-regular fa-comment-dots"></i></a></li>
-      <li>Follow Me</li>
+      <SocialLink link="comment.html" type="regular" icon="comment-dots"/>
+      <li>{{ fm }}</li>
       <li>-</li>
-      <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      <SocialLink link="#" type="brands" icon="linkedin-in"/>
+      <SocialLink link="#" type="brands" icon="dribbble"/>
+      <SocialLink link="#" type="brands" icon="behance"/>
+      <SocialLink link="#" type="brands" icon="facebook-f"/>
+      <SocialLink link="#" type="brands" icon="instagram"/>
     </ul>
     <!-- end social -->
 
   </header>
 </template>
-
-<style scoped>
-
-</style>

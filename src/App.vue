@@ -18,8 +18,6 @@
   <NavBar />
   <!-- end navbar -->
 
-
-
   <!-- start change pages-->
     <div id="router-view">
         <router-view v-slot="{ Component, route }">
