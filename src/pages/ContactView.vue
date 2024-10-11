@@ -8,8 +8,8 @@
       <div class="container">
 
         <div class="shape">
-          <img class="shape-10" src="@/assets/images/shape/shape-circle1.png" alt="shape">
-          <img class="shape-03" src="@/assets/images/shape/shape-03.png" alt="shape">
+          <img class="shape-10" src="../assets/images/shape/shape-circle1.png" alt="shape">
+          <img class="shape-03" src="../assets/images/shape/shape-03.png" alt="shape">
         </div>
 
         <div class="row">

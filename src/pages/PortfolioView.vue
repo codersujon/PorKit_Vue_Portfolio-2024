@@ -1,5 +1,5 @@
 <script setup>
-  import AddComment from "@/components/AddComment.vue";
+  import Portfolio from "@/components/Portfolio.vue";
 </script>
 
 <template>
@@ -8,18 +8,18 @@
     <div class="container">
 
       <div class="shape">
-        <img class="shape-10" src="@/assets/images/shape/shape-circle1.png" alt="shape">
-        <img class="shape-03" src="@/assets/images/shape/shape-03.png" alt="shape">
+        <img class="shape-10" src="../assets/images/shape/shape-circle1.png" alt="shape">
+        <img class="shape-03" src="../assets/images/shape/shape-03.png" alt="shape">
       </div>
 
       <div class="row">
         <div class="col-12">
           <div class="breadcrumb">
-            <h2>Add Comment</h2>
+            <h2>Portfolio</h2>
             <ul class="d-flex">
               <li><a href="#">home</a></li>
               <li>/</li>
-              <li>Add Comment</li>
+              <li>Portfolio</li>
             </ul>
           </div>
         </div>
@@ -29,9 +29,9 @@
   </header>
   <!-- end header -->
 
-  <!-- start comment -->
-  <AddComment />
-  <!-- end comment -->
+  <!-- start portfolio -->
+  <Portfolio />
+  <!-- end portfolio -->
 </template>
 
 <style scoped>
